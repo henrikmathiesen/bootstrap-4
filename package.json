@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap-4",
+  "version": "1.0.0",
+  "description": "Following along  \r https://app.pluralsight.com/library/courses/bootstrap-4-developer/table-of-contents",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server src -p 1337"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrikmathiesen/bootstrap-4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henrikmathiesen/bootstrap-4/issues"
+  },
+  "homepage": "https://github.com/henrikmathiesen/bootstrap-4#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
