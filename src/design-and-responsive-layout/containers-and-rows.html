@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Containers and Rows</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <style>
+        .app-div {
+            width: 100%;
+            height: 200px;
+        }
+    </style>
+
 </head>
+
 <body>
-    
+
+    <p>
+        <a href="https://getbootstrap.com/docs/4.1/layout/grid/">https://getbootstrap.com/docs/4.1/layout/grid/</a>
+    </p>
+
+    <div class="app-div bg-warning"></div>
+
+    <hr>
+
+    <div class="container">
+        <div class="app-div bg-primary"></div>
+    </div>
+
+    <hr>
+
+    <div class="container-fluid">
+        <div class="app-div bg-secondary"></div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <!-- This is actuallt 30px wider than the single container without row and col -->
+        <div class="row">
+            <div class="col bg-success">1</div>
+            <div class="col bg-warning">2</div>
+            <div class="col bg-danger">3</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md bg-success">1</div>
+            <div class="col-md bg-warning">2</div>
+            <div class="col-md bg-danger">3</div>
+        </div>
+        <div class="row">
+            <div class="col-sm bg-primary">1</div>
+            <div class="col-sm bg-info">2</div>
+        </div>
+    </div>
+
 </body>
+
 </html>
