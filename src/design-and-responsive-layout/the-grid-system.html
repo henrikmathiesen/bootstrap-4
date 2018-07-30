@@ -8,6 +8,13 @@
     <title>The Grid System</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+
+    <style>
+        div {
+            border: 1px solid #000;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -15,6 +22,64 @@
     <p>
         <a href="https://getbootstrap.com/docs/4.1/layout/grid/">https://getbootstrap.com/docs/4.1/layout/grid/</a>
     </p>
+
+    <section class="container">
+        <h2>12 Equal columns</h2>
+        <section class="row">
+            <div class="col">Equal</div>
+            <div class="col">Equal</div>
+            <div class="col">Equal</div>
+            <div class="col">Equal</div>
+            <div class="col">Equal</div>
+            <div class="col">Equal</div>
+            <div class="col">Equal</div>
+            <div class="col">Equal</div>
+            <div class="col">Equal</div>
+            <div class="col">Equal</div>
+            <div class="col">Equal</div>
+            <div class="col">Equal</div>
+        </section>
+    </section>
+
+    <hr>
+
+    <section class="container">
+        <h2>Equal columns</h2>
+        <section class="row">
+            <div class="col">Equal</div>
+            <div class="col">Equal</div>
+            <div class="w-100">Width 100%</div>
+            <div class="col">Equal</div>
+            <div class="col">Equal</div>
+        </section>
+    </section>
+
+    <section class="container">
+        <h2>Auto columns</h2>
+        <section class="row">
+            <div class="col">Auto to 2</div>
+            <div class="col-8">8</div>
+            <div class="col-2">2</div>
+        </section>
+    </section>
+
+    <section class="container">
+        <h2>Responsive columns</h2>
+        <section class="row">
+            <div class="col-sm">Equal, stack at xs</div>
+            <div class="col-sm">Equal, stack at xs</div>
+            <div class="col-sm">Equal, stack at xs</div>
+        </section>
+    </section>
+
+    <section class="container">
+        <h2>Ordered columns</h2>
+        <section class="row">
+            <div class="col-sm order-3">1 (last)</div>
+            <div class="col-sm order-1">2 (first)</div>
+            <div class="col-sm order-2">3 (second)</div>
+        </section>
+    </section>
 
 </body>
 
