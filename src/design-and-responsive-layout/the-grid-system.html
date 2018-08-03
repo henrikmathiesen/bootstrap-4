@@ -48,7 +48,7 @@
         <section class="row">
             <div class="col">Equal</div>
             <div class="col">Equal</div>
-            <div class="w-100">Width 100%</div>
+            <div class="w-100">Devider Width 100%</div>
             <div class="col">Equal</div>
             <div class="col">Equal</div>
         </section>
@@ -68,11 +68,22 @@
     <hr>
 
     <section class="container">
-        <h2>Responsive columns</h2>
+        <h2>Responsive columns 1</h2>
         <section class="row">
             <div class="col-sm">Equal, stack at xs</div>
             <div class="col-sm">Equal, stack at xs</div>
             <div class="col-sm">Equal, stack at xs</div>
+        </section>
+    </section>
+
+    <hr>
+
+    <section class="container">
+        <h2>Responsive columns 2</h2>
+        <section class="row">
+            <!-- sm >= 576, md >= 768, lg >= 992, xl >= 1200 -->
+            <div class="col-6 col-sm-7 col-md-10">col 1</div>
+            <div class="col-6 col-sm-5 col-md-2">Col 2</div>
         </section>
     </section>
 
@@ -84,6 +95,21 @@
             <div class="col-sm order-3">1 (last)</div>
             <div class="col-sm order-1">2 (first)</div>
             <div class="col-sm order-2">3 (second)</div>
+        </section>
+    </section>
+
+    <hr>
+
+    <section class="container">
+        <h2>Nested columns</h2>
+        <section class="row">
+            <div class="col bg-warning">
+                Parent
+                <section class="row">
+                    <div class="col bg-primary">Nested</div>
+                    <div class="col bg-secondary">Nested</div>
+                </section>
+            </div>
         </section>
     </section>
 
