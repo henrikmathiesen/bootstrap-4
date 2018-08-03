@@ -1,13 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alignment and Offsets</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
 </head>
+
 <body>
-    
+
+    <h1>Alignment and Offsets</h1>
+
+    <div class="container">
+        <h2>Align items center on y axis</h2>
+
+        <section class="row bg-warning align-items-center" style="height:200px;">
+            <div class="col bg-primary">col 1</div>
+            <div class="col bg-secondary">col 2</div>
+            <div class="col bg-info">col 3</div>
+        </section>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h2>Align items top on y axis</h2>
+
+        <section class="row bg-warning align-items-start" style="height:200px;">
+            <div class="col bg-primary">col 1</div>
+            <div class="col bg-secondary">col 2</div>
+            <div class="col bg-info">col 3</div>
+        </section>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h2>Align items bottom on y axis</h2>
+
+        <section class="row bg-warning align-items-end" style="height:200px;">
+            <div class="col bg-primary">col 1</div>
+            <div class="col bg-secondary">col 2</div>
+            <div class="col bg-info">col 3</div>
+        </section>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h2>Align individual col:s on y axis</h2>
+
+        <section class="row bg-warning" style="height:200px;">
+            <div class="col bg-primary align-self-start">col 1</div>
+            <div class="col bg-secondary">col 2</div>
+            <div class="col bg-info align-self-end">col 3</div>
+        </section>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h2>Justify</h2>
+
+        <!-- start (default), center, end, around, between -->
+        <section class="row bg-warning justify-content-center" style="height:200px;">
+            <div class="col-4 bg-primary">Col 1</div>
+            <div class="col-4 bg-secondary">Col 2</div>
+        </section>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h2>Offset</h2>
+
+        <section class="row bg-warning" style="height:200px;">
+            <div class="col-6 col-md-4 bg-primary">Col 1</div>
+            <div class="col-6 col-md-4 offset-md-4 bg-secondary">Col 2</div>
+        </section>
+    </div>
+
 </body>
+
 </html>
