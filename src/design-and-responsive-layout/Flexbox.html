@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Flexbox</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <style>
+        div {
+            border: 1px solid green;
+        }
+
+        section {
+            background-color: #f1f1f1;
+            height: 400px;
+        }
+    </style>
+
 </head>
+
 <body>
 
     <h1>Flexbox</h1>
-    
+
+    <p>
+        <a href="https://getbootstrap.com/docs/4.1/utilities/flex/">https://getbootstrap.com/docs/4.1/utilities/flex/</a>
+    </p>
+
+    <aside class="container">
+        <!-- flex-row and justify-content-start is default, can also use: flex-column, flex-row-reverse -->
+        <!-- justify-content-end , justify-content-center, justify-content-around, justify-content-between -->
+        <!-- align-items-stretch is default, can also use:  align-items-start, center, end -->
+        <section class="d-flex justify-content-between align-items-center">
+            <div class="p-4 align-self-md-stretch">My flex thing 1</div>
+            <div class="p-4">My flex thing 2</div>
+            <div class="p-4 align-self-md-end">My flex thing 3</div>
+        </section>
+    </aside>
+
 </body>
+
 </html>
