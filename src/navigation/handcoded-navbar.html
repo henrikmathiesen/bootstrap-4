@@ -16,6 +16,13 @@
         body {
             padding-top: 60px;
         }
+
+        @media only screen and (max-width:575px) {
+            .search-button {
+                display: block;
+                width: 100%;
+            }
+        }
     </style>
 
 </head>
@@ -32,7 +39,8 @@
             <div class="collapse navbar-collapse" id="navbar-responsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="navbar-item dropdown">
-                        <a id="nav-dropdown" href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <a id="nav-dropdown" href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Dropdown</a>
                         <div class="dropdown-menu" aria-labelledby="nav-dropdown">
                             <a href="#" class="dropdown-item">Sub Link 1</a>
                             <a href="#" class="dropdown-item">Sub Link 2</a>
@@ -56,6 +64,11 @@
                     <li class="nav-item">
                         <a href="#link5" class="nav-link js-scroll-trigger">Link 5</a>
                     </li>
+
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0 search-button">Search</button>
+                    </form>
                 </ul>
             </div>
         </div>
