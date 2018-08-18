@@ -12,8 +12,66 @@
 
 <body>
 
-    
+    <h1>Lists Groups and JavaScript</h1>
 
+    <p>
+        <a href="https://getbootstrap.com/docs/4.1/components/list-group/#javascript-behavior">https://getbootstrap.com/docs/4.1/components/list-group/#javascript-behavior</a>
+    </p>
+
+    <div class="container">
+
+        <div class="row mt-5">
+            <div class="col-4">
+                <div class="list-group mb-5" role="tablist" id="my-tab-list">
+                    <a href="#list-chapter-01" class="list-group-item list-group-item-action active" data-toggle="list" role="tab">Chapter 1</a>
+                    <a href="#list-chapter-02" class="list-group-item list-group-item-action" data-toggle="list" role="tab">Chapter 2</a>
+                    <a href="#list-chapter-03" class="list-group-item list-group-item-action" data-toggle="list" role="tab">Chapter 3</a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="tab-content">
+                    <div role="tabpanel" id="list-chapter-01" class="tab-pane fade show active" role="tabpanel">
+                        1
+                    </div>
+                    <div role="tabpanel" id="list-chapter-02" class="tab-pane fade" role="tabpanel">
+                        2
+                    </div>
+                    <div role="tabpanel" id="list-chapter-03" class="tab-pane fade" role="tabpanel">
+                        3
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <button app-activate-tab app-activate-tab-id="my-tab-list" app-activate-tab-nr="3">Show tab 3</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+
+        (function () {
+
+            $('[app-activate-tab]').on('click', function () {
+                var id = $(this).attr('app-activate-tab-id');
+                var nr = $(this).attr('app-activate-tab-nr');
+                $('#' + id).find('a').eq((nr - 1)).tab('show');
+            });
+
+        })();
+
+    </script>
 </body>
 
 </html>
