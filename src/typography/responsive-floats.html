@@ -12,7 +12,54 @@
 
 <body>
 
-    
+    <h1>Responsive Floats</h1>
+
+    <p>
+        <a href="https://getbootstrap.com/docs/4.1/utilities/float/">https://getbootstrap.com/docs/4.1/utilities/float/</a>
+    </p>
+
+    <!-- sm >= 576, md >= 768, lg >= 992, xl >= 1200 -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="float-left">Float left on all viewport sizes</div>
+                <br>
+                <div class="float-right">Float right on all viewport sizes</div>
+                <br>
+                <div class="float-none">Don't float on all viewport sizes</div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <div class="float-sm-right">Float right on viewports sized SM (small) or wider</div>
+                <br>
+                <div class="float-md-right">Float right on viewports sized MD (medium) or wider</div>
+                <br>
+                <div class="float-lg-right">Float right on viewports sized LG (large) or wider</div>
+                <br>
+                <div class="float-xl-right">Float right on viewports sized XL (extra-large) or wider</div>
+                <br>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <div class="clearfix">
+                    <div class="float-left">
+                        LEFT
+                    </div>
+                    <div class="float-right">
+                        RIGHT
+                    </div>
+                </div>
+                <div>
+                    Under (clearfix still needed)
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
