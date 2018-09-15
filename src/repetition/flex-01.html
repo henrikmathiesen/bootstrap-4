@@ -13,6 +13,10 @@
         .app-btn {
             width: 8.1rem;
         }
+
+        .app-menu-btns + .app-menu-btns {
+            margin-left: 7.2rem;
+        }
     </style>
 
 </head>
@@ -55,19 +59,19 @@
 
         <div class="row">
             <div class="col">
-                <h2>3 and 1 to the right</h2>
+                <h2>3 and 1 to the right (not optimal)</h2>
                 <nav>
-                    <ul class="list-unstyled d-flex">
-                        <li>
+                    <ul class="list-unstyled d-flex justify-content-between">
+                        <li class="app-menu-btns">
                             <button type="button" class="btn btn-success app-btn">Lorem ipsum</button>
                         </li>
-                        <li>
+                        <li class="app-menu-btns">
                             <button type="button" class="btn btn-success app-btn">About</button>
                         </li>
-                        <li>
+                        <li class="app-menu-btns">
                             <button type="button" class="btn btn-success app-btn">Make an order</button>
                         </li>
-                        <li>
+                        <li class="ml-auto">
                             <button type="button" class="btn btn-warning app-btn">Log in</button>
                         </li>
                     </ul>
