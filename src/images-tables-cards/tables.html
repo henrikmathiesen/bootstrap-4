@@ -8,6 +8,13 @@
     <title>Tables</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+
+    <style>
+        .table-hover thead .table-primary:hover,
+        .table-hover thead .table-primary:hover th {
+            background-color: #b8daff;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,6 +26,126 @@
     <div class="container">
         <div class="row">
             <div class="col">
+
+                <h2>Very Simple</h2>
+
+                <table class="table">
+                    <tr>
+                        <td>1</td>
+                        <td>Lorem</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Ipsum</td>
+                    </tr>
+                </table>
+
+                <h2>With Header, small also dark themed</h2>
+
+                <table class="table table-dark table-sm">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Lorem</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ipsum</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Striped, Hover, Colored Header and bordered</h2>
+                <table class="table table-striped table-hover table-bordered">
+                    <thead>
+                        <tr class="table-primary">
+                            <th>#</th>
+                            <th>Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Lorem</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Dolores</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Es sita met</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Responsive Table (with dark header)</h2>
+                <div class="table-responsive mb-5">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>#</th>
+                                <th>Heading</th>
+                                <th>Heading</th>
+                                <th>Heading</th>
+                                <th>Heading</th>
+                                <th>Heading</th>
+                                <th>Heading</th>
+                                <th>Heading</th>
+                                <th>Heading</th>
+                                <th>Heading</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
             </div>
         </div>
