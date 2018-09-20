@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Column</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Flex Column</h1>
+
+    <p>
+        <a href="https://getbootstrap.com/docs/4.1/utilities/flex/">https://getbootstrap.com/docs/4.1/utilities/flex/</a>
+    </p>
+
+    <ul>
+        <li>flex-column (vertical direction) is not default and needs to be set with css class</li>
+        <li>can align all items on y-axis (justify-content-x)</li>
+        <li>can not align self on y-axis (use margin auto instead)</li>
+        <li>can align all items on x-axis (align-items-x)</li>
+        <li>can align self on x-axis (align-self-x)</li>
+    </ul>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Menu Items Equal Spacing</h2>
+                <nav>
+                    <ul class="list-unstyled d-flex flex-column justify-content-between align-items-center" style="height: 400px;">
+                        <li>
+                            <button type="button" class="btn btn-info app-btn">Lorem ipsum</button>
+                        </li>
+                        <li class="align-self-start">
+                            <button type="button" class="btn btn-info app-btn">About</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-info app-btn">Make an order</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-info app-btn">Dolores</button>
+                        </li>
+                        <li class="mt-auto">
+                            <button type="button" class="btn btn-info app-btn">Log in</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
