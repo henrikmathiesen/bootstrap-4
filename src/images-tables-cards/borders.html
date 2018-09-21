@@ -8,6 +8,21 @@
     <title>Borders</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+
+    <style>
+        .bordered-div {
+            height: 200px;
+        }
+
+        .rounded-div {
+            width: 100px;
+            height: 100px;
+        }
+
+        .foo {
+            border:1px solid black;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,7 +34,19 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                
+                <div class="mb-2 border bordered-div"></div>
+                <div class="mb-2 border-bottom border-left border-success bordered-div"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="mb-2 foo bordered-div border-top-0"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="mb-2 border border-info rounded-top bordered-div"></div>
+                <div class="mb-2 border border-info rounded-circle rounded-div"></div>
             </div>
         </div>
     </div>
