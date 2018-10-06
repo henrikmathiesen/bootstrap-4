@@ -19,7 +19,39 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                
+                <form>
+                    <div>
+                        <label for="name">Character's name</label>
+                        <input type="text" id="name" placeholder="Enter your character's name">
+                    </div>
+                    <div>
+                        <label for="email">Character's Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your character's email address">
+                        <small>Your character's email will not be shared with anyone</small>
+                    </div>
+                    <div>
+                        <label for="password">Character's password</label>
+                        <input type="password" id="password" placeholder="Password" readonly>
+                    </div>
+                    <div>
+                        <label for="species">Species</label>
+                        <select name="species" id="species">
+                            <option value="Human">Human</option>
+                            <option value="Non Human">Non Human</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">Message for the Queen of Hearts</label>
+                        <textarea id="message" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <label for="file">Upload a file</label>
+                        <input type="file" id="file">
+                        <small id="help-file">Maximum size is 8 MB</small>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </div>
     </div>
