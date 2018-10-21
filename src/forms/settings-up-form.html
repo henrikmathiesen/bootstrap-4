@@ -26,16 +26,16 @@
                     </div>
                     <div class="form-group">
                         <label for="email">Character's Email Address</label>
-                        <input type="email" id="email" class="form-control" placeholder="Enter your character's email address">
-                        <small class="form-text text-muted">Your character's email will not be shared with anyone</small>
+                        <input type="email" id="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter your character's email address">
+                        <small id="emailHelp" class="form-text text-muted">Your character's email will not be shared with anyone</small>
                     </div>
                     <div class="form-group">
-                        <label for="password">Character's password</label>
-                        <input type="password" id="password" class="form-control" placeholder="Password" readonly>
+                        <label for="password">Character's password</label> <!-- readonly and form-control-plaintext -->
+                        <input type="password" id="password" class="form-control-plaintext" placeholder="Password" readonly>
                     </div>
                     <div class="form-group">
                         <label for="species">Species</label>
-                        <select name="species" id="species" class="form-control">
+                        <select name="species" id="species" class="form-control form-control-lg">
                             <option value="Human">Human</option>
                             <option value="Non Human">Non Human</option>
                         </select>
@@ -46,8 +46,8 @@
                     </div>
                     <div class="form-group">
                         <label for="file">Upload a file</label>
-                        <input type="file" id="file" class="form-control-file btn btn-light">
-                        <small id="help-file" class="form-text text-muted">Maximum size is 8 MB</small>
+                        <input type="file" id="file" class="form-control-file btn btn-light" aria-describedby="helpFile">
+                        <small id="helpFile" class="form-text text-muted">Maximum size is 8 MB</small>
                     </div>
 
                     <button type="submit" class="btn btn-success">Submit</button>
