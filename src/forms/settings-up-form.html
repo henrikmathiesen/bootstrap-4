@@ -27,11 +27,13 @@
                     <div class="form-group">
                         <label for="email">Character's Email Address</label>
                         <input type="email" id="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter your character's email address">
-                        <small id="emailHelp" class="form-text text-muted">Your character's email will not be shared with anyone</small>
+                        <small id="emailHelp" class="form-text text-muted">Your character's email will not be shared
+                            with anyone</small>
                     </div>
                     <div class="form-group">
                         <label for="password">Character's password</label> <!-- readonly and form-control-plaintext -->
-                        <input type="password" id="password" class="form-control-plaintext" placeholder="Password" readonly>
+                        <input type="password" id="password" class="form-control-plaintext" placeholder="Password"
+                            readonly>
                     </div>
                     <div class="form-group">
                         <label for="species">Species</label>
@@ -44,10 +46,20 @@
                         <label for="message">Message for the Queen of Hearts</label>
                         <textarea id="message" rows="3" class="form-control"></textarea>
                     </div>
+
+                    <!-- can not change text on button with this approach (it is set by some culture...), also can not design button -->
                     <div class="form-group">
-                        <label for="file">Upload a file</label>
-                        <input type="file" id="file" class="form-control-file btn btn-light" aria-describedby="helpFile">
+                        <label for="file-default">Upload a file</label>
+                        <input type="file" id="file-default" class="form-control-file btn btn-primary" aria-describedby="helpFile">
                         <small id="helpFile" class="form-text text-muted">Maximum size is 8 MB</small>
+                    </div>
+
+                    <!-- Another way: sr-only on input, custom button as a label with role=button that is linked to the input via for attribute -->
+                    <div class="form-group">
+                        <input type="file" accept=".pdf, .doc, .docx, .txt" class="sr-only" id="file">
+                        <label role="button" for="file" class="btn btn-primary">
+                            Ladda upp fil
+                        </label>
                     </div>
 
                     <button type="submit" class="btn btn-success">Submit</button>
