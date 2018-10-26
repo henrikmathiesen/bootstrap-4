@@ -15,11 +15,42 @@
     <p>
         <a href="https://getbootstrap.com/docs/4.1/components/forms/">https://getbootstrap.com/docs/4.1/components/forms/</a>
     </p>
+    <p>
+        <a href="https://getbootstrap.com/docs/4.1/components/forms/#validation">https://getbootstrap.com/docs/4.1/components/forms/#validation</a>
+    </p>
 
     <div class="container">
         <div class="row">
             <div class="col">
-
+                <h2>.is-invalid and .is-valid classes</h2>
+                <p>
+                    "As a fallback, .is-invalid and .is-valid classes may be used instead of the pseudo-classes for
+                    server side validation. They do not require a .was-validated parent class."
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form novalidate>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <!-- is-valid, is-invalid (feedback is only visible when respective class is applied) -->
+                        <input type="text" id="username" class="form-control is-invalid">
+                        <div class="invalid-feedback">
+                            Please provide...
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Email</label>
+                        <input type="email" id="username" class="form-control is-valid">
+                        <div class="valid-feedback">
+                            Looks ok ...
+                        </div>
+                    </div>
+                    <div class="form-group text-right">
+                        <button type="button" class="btn btn-info">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
