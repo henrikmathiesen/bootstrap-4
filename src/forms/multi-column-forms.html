@@ -15,10 +15,51 @@
     <p>
         <a href="https://getbootstrap.com/docs/4.1/components/forms/">https://getbootstrap.com/docs/4.1/components/forms/</a>
     </p>
+    <p>
+        <a href="https://getbootstrap.com/docs/4.1/components/forms/#form-row">https://getbootstrap.com/docs/4.1/components/forms/#form-row</a>
+    </p>
 
     <div class="container">
         <div class="row">
             <div class="col">
+
+                <form>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Mad" aria-label="Mad">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Hatter" aria-label="Hatter">
+                        </div>
+                    </div>
+                    <div class="form-row mt-4">
+                        <div class="col-sm-auto">
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label mr-4">
+                                    <input type="checkbox" class="form-check-input">
+                                    Crazy times?
+                                </label>
+                                <label class="form-check-label mr-4">
+                                    <input type="checkbox" class="form-check-input">
+                                    Good times?
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    Extra?
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-auto">
+                            <div class="form-group text-center">
+                                <label for="customRange1">Example range</label>
+                                <input type="range" class="custom-range" id="customRange1">
+                            </div>
+                        </div>
+                        <div class="col-sm-auto text-right" style="margin-left:auto">
+                            <button type="button" class="btn btn-lg btn-info">Send</button>
+                        </div>
+                    </div>
+                </form>
 
             </div>
         </div>
