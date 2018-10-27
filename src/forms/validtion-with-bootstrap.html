@@ -29,6 +29,12 @@
                     - we could add was-validated on form submit, with javascript
                     - can use invalid-tooltip (parent must have position relative)
 
+                    Use this to stop a post if not valid
+                    if ($('form').checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+
                     - see validation-classes.html for an approach that I think would work better with Angular
                         - http://jasonwatmore.com/post/2018/05/10/angular-6-reactive-forms-validation-example
                     - this might work with template driven forms though
