@@ -13,13 +13,21 @@
 <body>
     <h1>Radios, Checkboxes, Select</h1>
     <p>
-        <a href="https://getbootstrap.com/docs/4.1/components/forms/">https://getbootstrap.com/docs/4.1/components/forms/</a>
+        <a href="https://getbootstrap.com/docs/4.1/components/forms/#custom-forms">https://getbootstrap.com/docs/4.1/components/forms/#custom-forms</a>
     </p>
 
     <div class="container">
         <div class="row">
             <div class="col">
-
+                <form novalidate>
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                        </div>
+                    </div>
+                    <!-- See the docs ... -->
+                </form>
             </div>
         </div>
     </div>
