@@ -16,6 +16,46 @@
         <a href="https://getbootstrap.com/docs/4.1/components/collapse/">https://getbootstrap.com/docs/4.1/components/collapse/</a>
     </p>
 
+    <div class="container">
+
+        <p>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#target01" aria-expanded="false" aria-controls="target01">Toggle 1</button>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#target02" aria-expanded="false" aria-controls="target02">Toggle 2</button>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target=".target01andtarget02"
+                aria-expanded="false" aria-controls="target01 target02">Toggle Booth</button>
+        </p>
+
+        <div class="row">
+            <div class="col">
+                <div class="collapse target01andtarget02" id="target01">
+                    <div class="card card-body">
+                        1. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                        squid.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                        proident.
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="collapse target01andtarget02" id="target02">
+                    <div class="card card-body">
+                        2. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                        squid.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                        proident.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
