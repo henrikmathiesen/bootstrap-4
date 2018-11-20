@@ -18,10 +18,12 @@
 
     <div class="container">
         <div class="mb-2">
+            <!-- Hover is the default trigger for tooltips -->
             <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Tooltip text">Hover me</button>
         </div>
         <div class="mb-2">
             <!-- click:blur is from  https://ng-bootstrap.github.io/#/components/tooltip/examples#triggers (this also triggers on focus) -->
+            <!-- Wont close on ESC, wont close on click again on button -- need custom javascript for that -->
             <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="right" data-trigger="click:blur" title="Tooltip text">Click me</button>
         </div>
         <div class="mb-2">
