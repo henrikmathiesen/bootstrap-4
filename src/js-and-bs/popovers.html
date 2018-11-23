@@ -23,12 +23,18 @@
             <button type="button" class="btn btn-lg btn-info" data-toggle="popover" title="Popover title" data-content="Popover body. Lorem ipsum dolores es sita met.">Click
                 me</button>
         </div>
-        <div>
+        <div class="mb-2">
             <!-- Specific markup required for dismiss-on-next-click, use a tag as bellow -->
             <!-- Wont close on ESC, wont close on click again on button -- need custom javascript for that -->
             <a tabindex="0" class="btn btn-lg btn-warning" role="button" data-toggle="popover" data-trigger="click:blur"
                 title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible
                 popover</a>
+        </div>
+        <div>
+            <button type="button" class="btn btn-lg btn-info" data-toggle="popover" data-html="true" title="Popover title"
+                data-content="<h4>A header</h4><div>Some text</div>">
+                Click me for html tooltip
+            </button>
         </div>
     </div>
 
