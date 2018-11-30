@@ -77,7 +77,8 @@
             });
 
             $(window).on('keyup', function (e) {
-                var wasEsc = e.keyCode === 27 || (e.key && e.key.toLowerCase() === 'escape');
+                var wasEsc = (e.keyCode === 27) || (e.key && (e.key.toLowerCase() === 'escape' || e.key.toLowerCase() === 'esc'));
+
                 if (wasEsc) {
                     $pt.tooltip('hide');
                 }
