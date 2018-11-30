@@ -19,12 +19,15 @@
     <div class="container">
         <div class="mb-2">
             <!-- Hover is the default trigger for tooltips -->
-            <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Tooltip text">Hover me</button>
+            <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Tooltip text">Hover
+                me</button>
         </div>
         <div class="mb-2">
             <!-- click:blur is from  https://ng-bootstrap.github.io/#/components/tooltip/examples#triggers (this also triggers on focus) -->
+            <!-- OBS: focus would have been enough -->
             <!-- Wont close on ESC, wont close on click again on button -- need custom javascript for that -->
-            <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="right" data-trigger="click:blur" title="Tooltip text">Click me</button>
+            <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="right" data-trigger="focus"
+                title="Tooltip text">Click me</button>
         </div>
         <div class="mb-2">
             <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="right" title="Disabled tooltip">
@@ -32,7 +35,8 @@
             </span>
         </div>
         <div class="mb-2">
-            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" data-trigger="click" title="<h4>Header</h4><p>Body, lorem ipsum dolores es sita met.</p>">
+            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" data-trigger="click"
+                title="<h4>Header</h4><p>Body, lorem ipsum dolores es sita met.</p>">
                 Tooltip with HTML
             </button>
         </div>
@@ -46,7 +50,8 @@
                 <li>Click outside to close</li>
             </ul>
             <div>
-                TODO: implement
+                <button type="button" class="btn btn-success js-perfect-tooltip" data-toggle="tooltip" data-placement="right"
+                    data-trigger="manual" title="Perfect Tooltip!">Perfect Tooltip</button>
             </div>
         </div>
     </div>
@@ -59,9 +64,32 @@
         crossorigin="anonymous"></script>
 
     <script>
-        // This is needed
         $(function () {
+            // This is needed
             $('[data-toggle="tooltip"]').tooltip();
+
+            // Perfect Tooltip
+            
+            var $pt = $('.js-perfect-tooltip');
+
+            $pt.on('click', function (e) {
+                $pt.tooltip('toggle');
+            });
+
+            $(window).on('keyup', function (e) {
+                var wasEsc = e.keyCode === 27 || (e.key && e.key.toLowerCase() === 'escape');
+                if (wasEsc) {
+                    $pt.tooltip('hide');
+                }
+            });
+
+            $(document).on('click', function (e) {
+                var $target = $(e.target);
+
+                if ($target.html() != $pt.html()) {
+                    $pt.tooltip('hide');
+                }
+            });
         });
     </script>
 </body>
