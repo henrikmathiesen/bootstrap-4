@@ -20,18 +20,21 @@
         <div class="mb-2">
             <!-- click is the default trigger for popover (this also triggers on focus + enter) -->
             <!-- data-placement is right by default. If other direction, the tooltip is placed there if there is room for it -->
-            <button type="button" class="btn btn-lg btn-info" data-toggle="popover" title="Popover title" data-content="Popover body. Lorem ipsum dolores es sita met.">Click me
+            <button type="button" class="btn btn-lg btn-info" data-toggle="popover" title="Popover title" data-content="Popover body. Lorem ipsum dolores es sita met.">Click
+                me
             </button>
         </div>
         <div class="mb-2">
             <!-- Specific markup required for dismiss-on-next-click, use a tag as bellow -->
             <!-- Wont close on ESC, wont close on click again on button -- need custom javascript for that -->
-            <a tabindex="0" class="btn btn-lg btn-warning" role="button" data-toggle="popover" data-trigger="click:blur" title="Dismissible popover"
-                data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover
+            <a tabindex="0" class="btn btn-lg btn-warning" role="button" data-toggle="popover" data-trigger="click:blur"
+                title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible
+                popover
             </a>
         </div>
         <div class="mb-2">
-            <button type="button" class="btn btn-lg btn-info" data-toggle="popover" data-html="true" title="Popover title" data-content="<h4>A header</h4><div>Some text</div>">
+            <button type="button" class="btn btn-lg btn-info" data-toggle="popover" data-html="true" title="Popover title"
+                data-content="<h4>A header</h4><div>Some text</div>">
                 Popover with HTML
             </button>
         </div>
@@ -45,8 +48,9 @@
                 <li>Click outside to close</li>
             </ul>
             <div>
-                <button type="button" class="btn btn-lg btn-success js-perfect-popover" data-toggle="popover" data-placement="right" data-trigger="manual"
-                    data-title="Just Perfect!" data-content="A perfect popover">Perfect Popover</button>
+                <button type="button" class="btn btn-lg btn-success js-perfect-popover" data-toggle="popover"
+                    data-placement="right" data-trigger="manual" data-title="Just Perfect!" data-content="A perfect popover">Perfect
+                    Popover</button>
             </div>
         </div>
     </div>
@@ -87,7 +91,30 @@
                     $po.popover('hide');
                 }
             });
-        })
+
+            // Testing events
+            // https://getbootstrap.com/docs/4.1/components/popovers/#events
+
+            $po.on('inserted.bs.popover', function () { 
+                console.log('inserted.bs.popover');
+            });
+
+            $po.on('show.bs.popover', function () { 
+                console.log('show.bs.popover');
+            });
+
+            $po.on('shown.bs.popover', function () { 
+                console.log('shown.bs.popover');
+            });
+
+            $po.on('hide.bs.popover', function () { 
+                console.log('hide.bs.popover');
+            });
+
+            $po.on('hidden.bs.popover', function () { 
+                console.log('hidden.bs.popover');
+            });
+        });
     </script>
 </body>
 
