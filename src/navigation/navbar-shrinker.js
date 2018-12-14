@@ -2,6 +2,7 @@
     "use strict";
 
     // Smooth scrolling using jQuery easing
+    // https://www.w3schools.com/css/css_attribute_selectors.asp
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);

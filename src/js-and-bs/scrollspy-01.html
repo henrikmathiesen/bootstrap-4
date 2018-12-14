@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scrollspy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <style>
+        body {
+            padding-top: 60px;
+        }
+
+        @media only screen and (max-width:575px) {
+            .search-button {
+                display: block;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <!--
+        We copy the handcoded navbar from handcoded-navbar.html and try Scroll Spy with that
+        https://getbootstrap.com/docs/4.1/components/scrollspy/
+    -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="main-nav">
+        <div class="container">
+            <a href="#top" class="navbar-brand">Navbar</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-responsive"
+                aria-controls="navbar-responsive" aria-expanded="false" aria-label="Toggle Navigation">Menu
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-responsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="navbar-item dropdown">
+                        <a id="nav-dropdown" href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="nav-dropdown">
+                            <a href="#" class="dropdown-item">Sub Link 1</a>
+                            <a href="#" class="dropdown-item">Sub Link 2</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">Sub Link 3</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#link1" class="nav-link">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#link2" class="nav-link">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#link3" class="nav-link">Link 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#link4" class="nav-link">Link 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#link5" class="nav-link">Link 5</a>
+                    </li>
+
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0 search-button">Search</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Top Header</h1>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et.
+                    Consectetur laboriosam provident
+                    odio, expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                    Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam
+                    provident odio,
+                    expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et. Lorem
+                    ipsum dolor sit amet,
+                    consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam provident
+                    odio, expedita repellendus
+                    sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                </p>
+
+                <h2>Link 1</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et.
+                    Consectetur laboriosam provident
+                    odio, expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                    Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam
+                    provident odio,
+                    expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et. Lorem
+                    ipsum dolor sit amet,
+                    consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam provident
+                    odio, expedita repellendus
+                    sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                </p>
+
+                <h2>Link 2</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et.
+                    Consectetur laboriosam provident
+                    odio, expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                    Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam
+                    provident odio,
+                    expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et. Lorem
+                    ipsum dolor sit amet,
+                    consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam provident
+                    odio, expedita repellendus
+                    sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et.
+                    Consectetur laboriosam provident
+                    odio, expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                    Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam
+                    provident odio,
+                    expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et. Lorem
+                    ipsum dolor sit amet,
+                    consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam provident
+                    odio, expedita repellendus
+                    sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                </p>
+
+                <h2>Link 3</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et.
+                    Consectetur laboriosam provident
+                    odio, expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                    Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam
+                    provident odio,
+                    expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et. Lorem
+                    ipsum dolor sit amet,
+                    consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam provident
+                    odio, expedita repellendus
+                    sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et.
+                    Consectetur laboriosam provident
+                    odio, expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                    Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam
+                    provident odio,
+                    expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et. Lorem
+                    ipsum dolor sit amet,
+                    consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam provident
+                    odio, expedita repellendus
+                    sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et.
+                    Consectetur laboriosam provident
+                    odio, expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                    Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam
+                    provident odio,
+                    expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et. Lorem
+                    ipsum dolor sit amet,
+                    consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam provident
+                    odio, expedita repellendus
+                    sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                </p>
+
+                <h2>Link 4</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et.
+                    Consectetur laboriosam provident
+                    odio, expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                    Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam
+                    provident odio,
+                    expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et. Lorem
+                    ipsum dolor sit amet,
+                    consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam provident
+                    odio, expedita repellendus
+                    sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et.
+                    Consectetur laboriosam provident
+                    odio, expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                    Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam
+                    provident odio,
+                    expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et. Lorem
+                    ipsum dolor sit amet,
+                    consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam provident
+                    odio, expedita repellendus
+                    sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et.
+                    Consectetur laboriosam provident
+                    odio, expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                    Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam
+                    provident odio,
+                    expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et. Lorem
+                    ipsum dolor sit amet,
+                    consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam provident
+                    odio, expedita repellendus
+                    sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                </p>
+
+                <h2>Link 5</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et.
+                    Consectetur laboriosam provident
+                    odio, expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                    Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam
+                    provident odio,
+                    expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et. Lorem
+                    ipsum dolor sit amet,
+                    consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam provident
+                    odio, expedita repellendus
+                    sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et.
+                    Consectetur laboriosam provident
+                    odio, expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                    Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam
+                    provident odio,
+                    expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et. Lorem
+                    ipsum dolor sit amet,
+                    consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam provident
+                    odio, expedita repellendus
+                    sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et.
+                    Consectetur laboriosam provident
+                    odio, expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                    Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam
+                    provident odio,
+                    expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et. Lorem
+                    ipsum dolor sit amet,
+                    consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam provident
+                    odio, expedita repellendus
+                    sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                </p>
+
+                <h2>Sublink 1</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et.
+                    Consectetur laboriosam provident
+                    odio, expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                    Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam
+                    provident odio,
+                    expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et. Lorem
+                    ipsum dolor sit amet,
+                    consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam provident
+                    odio, expedita repellendus
+                    sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et.
+                    Consectetur laboriosam provident
+                    odio, expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                    Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam
+                    provident odio,
+                    expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et. Lorem
+                    ipsum dolor sit amet,
+                    consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam provident
+                    odio, expedita repellendus
+                    sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et.
+                    Consectetur laboriosam provident
+                    odio, expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                    Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam
+                    provident odio,
+                    expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et. Lorem
+                    ipsum dolor sit amet,
+                    consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam provident
+                    odio, expedita repellendus
+                    sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                </p>
+
+                <h2>Sublink 2</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et.
+                    Consectetur laboriosam provident
+                    odio, expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                    Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam
+                    provident odio,
+                    expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et. Lorem
+                    ipsum dolor sit amet,
+                    consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam provident
+                    odio, expedita repellendus
+                    sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et.
+                    Consectetur laboriosam provident
+                    odio, expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                    Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam
+                    provident odio,
+                    expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et. Lorem
+                    ipsum dolor sit amet,
+                    consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam provident
+                    odio, expedita repellendus
+                    sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et.
+                    Consectetur laboriosam provident
+                    odio, expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                    Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam
+                    provident odio,
+                    expedita repellendus sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et. Lorem
+                    ipsum dolor sit amet,
+                    consectetur adipisicing elit. Optio est libero ipsum fugiat et. Consectetur laboriosam provident
+                    odio, expedita repellendus
+                    sapiente magnam ad quos repudiandae nemo, voluptates optio, enim et.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
