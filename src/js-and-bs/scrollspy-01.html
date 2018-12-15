@@ -637,7 +637,7 @@
         }
 
         function setupHashChangeScrolling() {
-            $(window).on('hashchange', function (e) {
+            $(window).on('hashchange', function () {
                 var hash = window.location.hash;
                 if (hash) {
                     scrollToId(hash);
