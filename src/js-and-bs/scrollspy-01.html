@@ -622,6 +622,13 @@
             setupHashChangeScrolling();
         });
 
+        function scrollIfHashInUrl() {
+            var hash = window.location.hash;
+            if (hash) {
+                scrollToId(hash);
+            }
+        }
+
         function setupNavScrolling() {
             var $links = $('.navbar-nav').find('a');
             $links.on('click', function () {
@@ -636,13 +643,6 @@
                     scrollToId(hash);
                 }
             });
-        }
-
-        function scrollIfHashInUrl() {
-            var hash = window.location.hash;
-            if (hash) {
-                scrollToId(hash);
-            }
         }
 
         function scrollToId(id) {
